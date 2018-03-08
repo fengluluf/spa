@@ -1,0 +1,11 @@
+.rectangle{
+	height:100px;
+	margin-top:10px;
+}
+input{
+	margin:5px auto;
+}
+.rectangle__calc{
+	width:50px;
+	margin-left:100px;
+}

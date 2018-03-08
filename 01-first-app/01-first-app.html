@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="01-first-app.css">
+</head>
+<body>
+	<div>
+		<label>宽度</label>
+		<input id="rectangle__width" type="textbox">
+		<br/>
+		<label>高度</label>
+		<input id="rectangle__height" type="textbox">
+		<br/>
+		<input id="rectangle__calc" type="button" value="计算">
+		<br/>
+		<label>周长</label>
+		<input id="rectangle__per" type="textbox">
+		<br/>
+		<label>面积</label>
+		<input id="rectangle__area" type="textbox">
+		<br/>
+	</div>
+	<script type="text/javascript">
+	window.onload = function(){
+		function click(){
+			var width = document.getElementById("rectangle__width").value;
+			var height = document.getElementById("rectangle__height").value;
+			document.getElementById("rectangle__per").value= width*2+height*2;
+			document.getElementById("rectangle__area").value = width*height;
+		}
+		document.getElementById("rectangle__calc").onclick=click;
+	}
+	</script>
+</body>
+</html>
