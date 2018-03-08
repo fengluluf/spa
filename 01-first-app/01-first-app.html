@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="01-first-app.css">
 </head>
 <body>
-	<div>
+	<div class="rectangle">
 		<label>宽度</label>
 		<input id="rectangle__width" type="textbox">
 		<br/>
@@ -24,6 +24,8 @@
 	</div>
 	<script type="text/javascript">
 	window.onload = function(){
+		var width = document.getElementById("rectangle__width");
+		width.focus();
 		function click(){
 			var width = document.getElementById("rectangle__width").value;
 			var height = document.getElementById("rectangle__height").value;
