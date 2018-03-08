@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	var i=10;
 	$("#btn").val('同意( '+i+' s)');
-	$('#btn').attr('disabled','disabled');
+	$('#btn').attr('disabled',true);
 	var timer=window.setInterval(function(){myTimer()},1000);
 	function myTimer(){
 		$("#btn").val('同意( '+--i+' s)');

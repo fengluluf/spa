@@ -1,3 +1,4 @@
 $(document).ready(function(){
-	$('input').focus();
+	//$('#pass').focus();
+	$('span').mouseover($('#pass').attr('type','text'));
 })

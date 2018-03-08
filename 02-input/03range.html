@@ -1,9 +1,17 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-	<title>定时器按钮</title>
+	<title>范围控件</title>
+	<link rel="stylesheet" type="text/css" href="03range.css">
+	<script src="jquery.js"></script>
+	<script type="text/javascript" src="03range.js"></script>
 </head>
 <body>
-	<input type="button">
+<div>
+	<label>年龄：</label>
+	<input type="range" id="range" min='0' max='100' value='0'>
+	<br/>
+	<p>你的年龄是：<span id="span"></span></p>
+</div>
 </body>
 </html>
