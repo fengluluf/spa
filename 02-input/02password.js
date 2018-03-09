@@ -1,4 +1,5 @@
 $(document).ready(function(){
 	//$('#pass').focus();
-	$('span').mouseover($('#pass').attr('type','text'));
+	$('#show').mouseover(function(){$('#pass').attr('type','text')});
+	$('#show').mouseout(function(){$('#pass').attr('type','password')});
 })
