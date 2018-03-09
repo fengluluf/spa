@@ -1,9 +1,19 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-	<title>定时器按钮</title>
+	<title>进度条控件</title>
+	<link rel="stylesheet" type="text/css" href="04progress.css">
+	<script src="jquery.js"></script>
+	<script type="text/javascript" src="04progress.js"></script>
 </head>
 <body>
-	<input type="button">
+	<label>加载进度条：</label>
+	<progress max='100' value='0' id="pro"></progress>
+	<br/>
+	<div>
+		<input type="button" id="start" value="开始">
+		<input type="button" id="end" value="暂停">
+		<input type="button" id="reset" value="重置">
+	</div>
 </body>
 </html>
