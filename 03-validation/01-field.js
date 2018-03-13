@@ -22,15 +22,15 @@ $(document).ready(function(){
 		var width = $width.val();
 		var data = $(e);
 		if(data.val()===''){
-			$widthp.html("此处不能为空");
+			$widthp.html("宽度不能为空");
 			return;
 		}
 		if(!/^-?(0|[1-9]\d*)(\.\d*)?([eE][+-]?\d+)?$/.test(data.val())) {
-      		$widthp.html( '必须是数值');
+      		$widthp.html( '宽度必须是数值');
       		return;
     	}
     	if(window.Number(data.val()) < 0) {
-      		$widthp.html( '必须大于零');
+      		$widthp.html( '宽度必须大于零');
       		return;
     	}
 		$widthp.html('');
@@ -39,15 +39,15 @@ $(document).ready(function(){
 		var height = $height.val();
 		var data = $(e);
 		if(data.val()===''){
-			$heightp.html("此处不能为空");
+			$heightp.html("长度不能为空");
 			return;
 		}
 		if(!/^-?(0|[1-9]\d*)(\.\d*)?([eE][+-]?\d+)?$/.test(data.val())) {
-      		$heightp.html( '必须是数值');
+      		$heightp.html( '长度必须是数值');
       		return;
     	}
     	if(window.Number(data.val()) < 0) {
-      		$heightp.html( '必须大于零');
+      		$heightp.html( '长度必须大于零');
       		return;
     	}
 		$heightp.html('');
