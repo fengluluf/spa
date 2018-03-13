@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>字段级验证</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="01-field.css">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="01-field.js"></script>
+
+</head>
+<body>
+	<div class="rectangle">
+		<label>宽度:</label>
+		<input id="rectangle__width" type="textbox">
+		<span class="text">*</span>
+		<div id="widthp"></div>
+		<label>高度:</label>
+		<input id="rectangle__height" type="textbox">
+		<span class="text">*</span>
+		<div id="heightp"></div>
+		<input id="rectangle__calc" type="button" value="计算">
+		<br/>
+		<label>周长:</label>
+		<input id="rectangle__per" type="textbox" disabled="disabled">
+		<br/>
+		<label>面积:</label>
+		<input id="rectangle__area" type="textbox" disabled="disabled">
+		<br/>
+	</div>
+</body>
+</html>
