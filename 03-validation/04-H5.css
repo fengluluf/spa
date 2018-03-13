@@ -1,0 +1,15 @@
+.rectangle{
+	height:100px;
+	width:500px;
+	margin:10px auto;
+}
+span{
+	color:red;
+}
+input{
+	margin:5px auto;
+}
+#rectangle__calc{
+	width:50px;
+	margin-left:100px;
+}
