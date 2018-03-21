@@ -4,10 +4,10 @@ $(function(){
 	var $btn = timerButton({
 		'container':'div.main',
 		'title':'同意',
-		'tlength':'1',
+		'tlength':'10',
 		'enable':false
 	});
-	$btn.on('timer-button-click',function(){
+	$btn.bind('timer-button-click',function(){
 		alert('已同意');
 	});
 
@@ -17,7 +17,7 @@ $(function(){
 		'tlength':'9',
 		'enable':true
 	});
-	$btn2.on('timer-button-click',function(){
+	$btn2.bind('timer-button-click',function(){
 		alert('发送短信');
 	});
 
