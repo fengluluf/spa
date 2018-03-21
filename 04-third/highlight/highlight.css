@@ -1,0 +1,12 @@
+#main{
+	text-align:center;
+	font-size:1.2em;
+}
+textarea{
+	font-size:1.2em;
+}
+input{
+	margin-top:20px;
+	width:120px;
+	height:40px;
+}
