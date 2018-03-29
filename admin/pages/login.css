@@ -37,7 +37,7 @@ html,body{
 .login label{
 	margin-right:5px; 
 }
-#sub{
+.login input[type="submit"]{
 	color:white;
 	background-color: #009688;
 	font-size:14px;
