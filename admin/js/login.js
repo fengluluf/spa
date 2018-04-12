@@ -18,28 +18,28 @@ var $login=(function(){
 	+'</div>');
 	var $form = $loginDOM.find('form');
 
-  function show() {
-    $(app.config.appContainer).html('');
-    $(app.config.appContainer).append($loginDOM);
-
-    $form.submit(function(e) {
-      e.preventDefault();
-      location.hash = '#/index';
-    });
-  }
-
   // function show() {
   //   $(app.config.appContainer).html('');
   //   $(app.config.appContainer).append($loginDOM);
 
   //   $form.submit(function(e) {
   //     e.preventDefault();
-  //     if(validate()){
-  //     	location.hash = '#/index';
-  //     	app.isLogin = true;
-  //     }
-      
+  //     location.hash = '#/index';
   //   });
   // }
+
+  function show() {
+    $(app.config.appContainer).html('');
+    $(app.config.appContainer).append($loginDOM);
+
+    $form.submit(function(e) {
+      e.preventDefault();
+      if(validate()){
+      	location.hash = '#/index';
+      	app.isLogin = true;
+      }
+      
+    });
+  }
 	return {show: show};
 })();
