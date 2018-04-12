@@ -1,5 +1,5 @@
 var $login=(function(){
-	var html=''+'<div id="admin-app">'
+	var $loginDOM=$(''+'<div id="admin-app">'
 	+'<div class="login">'
 	+'<h1>集团后台登录</h1>'
 	+'<form>'
@@ -15,9 +15,31 @@ var $login=(function(){
 	+'<input type="submit" value="登录" id="sub">'
 	+'</form>'
 	+'</div>'
-	+'</div>';
-	function show(config){
-		$(config.container).html(html);
-	}
-	return{show:show};
+	+'</div>');
+	var $form = $loginDOM.find('form');
+
+  function show() {
+    $(app.config.appContainer).html('');
+    $(app.config.appContainer).append($loginDOM);
+
+    $form.submit(function(e) {
+      e.preventDefault();
+      location.hash = '#/index';
+    });
+  }
+
+  // function show() {
+  //   $(app.config.appContainer).html('');
+  //   $(app.config.appContainer).append($loginDOM);
+
+  //   $form.submit(function(e) {
+  //     e.preventDefault();
+  //     if(validate()){
+  //     	location.hash = '#/index';
+  //     	app.isLogin = true;
+  //     }
+      
+  //   });
+  // }
+	return {show: show};
 })();
